@@ -26,7 +26,8 @@ namespace TodoApp
             InitializeComponent();
             var tasks = new TaskListViewModel();
             tasks.Tasks.Add(new TaskViewModel() { Name = "Task 1", Complete = false });
-            tasks.Tasks.Add(new TaskViewModel() { Name = "Task 2", Complete = true });
+            tasks.Tasks.Add(new TaskViewModel() { Name = "Task 2", Complete = false });
+            tasks.Tasks.Add(new TaskViewModel() { Name = "Task 3", Complete = false });
             this.DataContext = tasks;
         }
     }
